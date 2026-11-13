@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "record_id": "A",
+      "source": "catalog",
+      "kind": "facility",
+      "name": "青浦绿色材料一厂",
+      "registration": "R1",
+      "valid_from": "2026-01-01",
+      "valid_to": null
+    },
+    {
+      "record_id": "B",
+      "source": "expo",
+      "kind": "facility",
+      "name": "青浦绿材厂",
+      "registration": null,
+      "valid_from": "2026-01-01",
+      "valid_to": null
+    },
+    {
+      "record_id": "C",
+      "source": "park",
+      "kind": "facility",
+      "name": "青浦绿色材料二厂",
+      "registration": "R2",
+      "valid_from": "2026-01-01",
+      "valid_to": null
+    }
+  ],
+  "reviews": [],
+  "field_rules": {
+    "registration": "hard_when_present",
+    "name": "soft"
+  }
+}
