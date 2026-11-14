@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "field_rules": {
+    "registration": "hard_when_present",
+    "name": "soft",
+    "address": "soft_fragment_wise"
+  },
+  "records": [
+    {"record_id": "H1", "source": "catalog", "kind": "facility", "name": "青浦绿材一厂", "registration": "R-H1", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "上海市", "city": "上海市", "district": "青浦区", "street": "华青路", "detail": "1号"}},
+    {"record_id": "H2", "source": "expo", "kind": "facility", "name": "青浦绿才一厂", "registration": "R-H1", "valid_from": "2026-02-01", "valid_to": null, "address": {"province": "上海市", "city": "上海市", "district": "青浦区", "street": "华青路", "detail": "1号"}},
+    {"record_id": "H3", "source": "park", "kind": "facility", "name": "青浦绿材一厂", "registration": "R-H3", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "上海市", "city": "上海市", "district": "青浦区", "street": "华青路", "detail": "1号"}},
+
+    {"record_id": "N1", "source": "catalog", "kind": "organization", "name": "华东绿能科技有限公司", "registration": "R-N1", "valid_from": "2023-01-01", "valid_to": "2025-12-31", "address": {"province": "江苏省", "city": "苏州市", "district": "吴中区", "street": null, "detail": null}},
+    {"record_id": "N2", "source": "expo", "kind": "organization", "name": "华东绿能科技股份有限公司", "registration": null, "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "江苏省", "city": "苏州市", "district": "吴中区", "street": null, "detail": null}},
+
+    {"record_id": "M1", "source": "park", "kind": "facility", "name": "江北新材料试制基地", "registration": "R-M1", "valid_from": "2024-01-01", "valid_to": null, "address": {"province": "江苏省", "city": "南京市", "district": "江宁区", "street": "科学大道", "detail": "8号"}},
+    {"record_id": "M2", "source": "catalog", "kind": "facility", "name": "江北新材料试制基地", "registration": "R-M1", "valid_from": "2026-03-01", "valid_to": null, "address": {"province": "安徽省", "city": "马鞍山市", "district": "雨山区", "street": "智造路", "detail": "16号"}},
+
+    {"record_id": "G1", "source": "catalog", "kind": "organization", "name": "东方环宇集团有限公司", "registration": "R-G1", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "北京市", "city": "北京市", "district": "海淀区", "street": "学院路", "detail": "10号"}},
+    {"record_id": "G2", "source": "park", "kind": "facility", "name": "东方环宇集团北京基地", "registration": "R-G2", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "北京市", "city": "北京市", "district": "海淀区", "street": "学院路", "detail": "10号"}, "parent_id": "G1"},
+    {"record_id": "G3", "source": "expo", "kind": "facility", "name": "东方环宇集团天津基地", "registration": "R-G3", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "天津市", "city": "天津市", "district": "滨海新区", "street": "海旋路", "detail": "5号"}},
+
+    {"record_id": "B1", "source": "catalog", "kind": "facility", "name": "绿源动力装备厂", "registration": "R-B1", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "浙江省", "city": "杭州市", "district": "萧山区", "street": "创业路", "detail": "1号"}},
+    {"record_id": "B2", "source": "expo", "kind": "facility", "name": "绿源动力装备分厂", "registration": null, "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "浙江省", "city": "杭州市", "district": "萧山区", "street": "创业路", "detail": "1号"}},
+    {"record_id": "B3", "source": "park", "kind": "facility", "name": "绿源动力装备二厂", "registration": "R-B3", "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "浙江省", "city": "杭州市", "district": "萧山区", "street": "创业路", "detail": "1号"}},
+
+    {"record_id": "X1", "source": "catalog", "kind": "facility", "name": "远海检测站", "registration": null, "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "广东省", "city": "深圳市", "district": "南山区", "street": null, "detail": null}},
+    {"record_id": "X2", "source": "expo", "kind": "facility", "name": "远海检测服务站", "registration": null, "valid_from": "2026-01-01", "valid_to": null, "address": {"province": "广东省", "city": "深圳市", "district": "南山区", "street": null, "detail": null}}
+  ],
+  "reviews": [],
+  "labels": {
+    "tuning": [
+      {"pair": ["H1", "H2"], "label": "same"},
+      {"pair": ["H1", "H3"], "label": "different"},
+      {"pair": ["N1", "N2"], "label": "same"},
+      {"pair": ["M1", "M2"], "label": "same"},
+      {"pair": ["G2", "G3"], "label": "different"},
+      {"pair": ["B1", "B2"], "label": "same"},
+      {"pair": ["B2", "B3"], "label": "different"}
+    ],
+    "heldout": [
+      {"pair": ["X1", "X2"], "label": "same"},
+      {"pair": ["G1", "G2"], "label": "different"},
+      {"pair": ["H2", "H3"], "label": "different"},
+      {"pair": ["B1", "B3"], "label": "different"}
+    ]
+  }
+}
